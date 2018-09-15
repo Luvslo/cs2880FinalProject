@@ -1,0 +1,313 @@
+/* General page style
+****************************/
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    background-color: #052F57;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+p {
+    font-size: 20px;
+    color: #ffffff;
+}
+hr {
+    margin-bottom: 20px;
+    width: 90%;
+    border-color: #000000;
+    background-color: #000000;
+    color: #000000;
+}
+iframe {
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+}
+/* Nav header Logo Style */
+#logo {
+    width: 160px;
+    height: 65px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+/* Footer Style
+**************************/
+.footer {
+    text-align: center;
+    width: 100%;
+    background-color: #7C7A7A;
+    padding-top: 5px;
+}
+#credits {
+    font-size: 10px;
+}
+/* Navigation bar style
+***************************/
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    background-color: #292929;
+    width: 100%;
+    box-shadow: 0 3px 10px #888888;
+    text-align: center;
+    margin: 0 auto;
+}
+#navAlign {
+    margin: 0 15% 0 15%;
+}
+.navigation li {
+    float: left;
+}
+#navItems {
+   padding: 26px 0;
+}
+#rightNav {
+    float: right;
+}
+#navItems a {
+    display: block;
+    color: #75ABFF;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 16px;
+    font-size: 18px;
+}
+#navItems a:hover {
+    color: #096AC8;
+}
+#signUpNav {
+    visibility: hidden;
+}
+/* Style for main content boxes
+************************************/
+.contentWrapper {
+    flex: 1 0 auto;
+    margin: 20px 15% 0 15%;
+    padding: 15px;
+}
+/* character display box */
+.right {
+    float: right;
+    max-width: 30%;
+    margin: 0 auto;
+    border: 1px solid #494949;
+    background-color: #D6CCA9;
+    background-image: url("images/clean-gray-paper.png");
+    visibility: hidden;
+    padding: 10px;
+    box-shadow: 2px 2px 10px #888888;
+    text-align: center;
+}
+.right h2 {
+    text-align: center;
+}
+.right h3 {
+    text-align: center;
+}
+.right p {
+    text-align: left;
+    color: #292929
+}
+.equipmentBox {
+    color: #000000;
+}
+.right:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* centered main content on non-adventure pages */
+.mainCenter {
+    width: 100%;
+    margin: 0 auto;
+}
+.mainCenter h2 {
+    text-align: center;
+    color: #EEE;
+    width: 100%;
+    margin: 0 auto;
+}
+.mainCenter p {
+    text-indent: 50px;
+}
+/* main content for adventure pages */
+.main {
+    max-width: 70%;
+    padding: 10px;
+    float: left;
+}
+.main p {
+    text-indent: 50px;
+}
+.main h2 {
+    text-align: center;
+    color: #EEE;
+    margin: 0 auto;
+}
+/* content container */
+.contentBox {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contentBox a {
+    text-decoration: none;
+    font-size: 18px;
+    color: orange;
+}
+.contentBox a:hover {
+    cursor: pointer;
+    color: darkorange;
+}
+.contentBox:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Adventure preview boxes.  Adventure select boxes on home page
+********************************************************************/
+.adventurePreviewBox {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #292929;
+    text-align: center;
+    padding: 0;
+    background-color: #292929;
+    float: left;
+    opacity: 0.9;
+    box-shadow: 2px 2px 10px #888888;
+}
+.adventurePreviewBox:hover {
+    opacity: 1.0;
+    box-shadow: 4px 4px 10px #888888;
+}
+.adventurePreviewBox:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.adventurePreviewBox img {
+    width: 100%;
+    height: 85%;
+    margin: 0 auto;
+}
+.adventurePreviewBox h4 {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    color: #c5c6c7;
+}
+/* Character selection Modal, within adventures
+**************************************************/
+.modal-content {
+    background-color: #292929;
+}
+.modal-content h2 {
+    color: #75ABFF;
+}
+.modal-content h1 {
+    color: #75ABFF;
+}
+.modal-content h4 {
+    color: #096AD9;
+}
+.modal-content img, .statBox img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+#selectCharacterModal {
+    outline: none;
+}
+.modalRow {
+    float: left;
+    padding: 5px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.modalCol {
+    float: left;
+    text-align: center;
+    width: 32%;
+}
+.modalCol:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.modal label {
+    color: #c5c6c7;
+}
+.characterSelectBtn {
+    text-align: center;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    background-color: #75ABFF;
+    color: #000;
+}
+.characterSelectBtn:hover {
+    color: #000;
+    background-color: #096AC8;
+}
+#modalTitle {
+    font-size: 24px;
+}
+#submitCharacter {
+    margin: 10px;
+}
+/* login, signup widget
+***************************/
+#loginWidget {
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 5px;
+}
+#loginWidget h1 {
+    margin: 0 auto;
+    padding: 3px;
+}
+#loginWidget form {
+    background-color: #EEE;
+    border: 1px solid #DDD;
+    border-radius: 0 0 10px 10px;
+}
+#loginWidget form label {
+    width: 95px;
+    text-align: right;
+    display: inline-block;
+}
+#loginWidget div.stack {
+    margin: 1em 0;
+}
+div.ui-state-error {
+    padding: 4px 0;
+}
+.ui-widget-content {
+    margin-left: 5px;
+}
+/* link from login <-> signUp  on login/signup pages */
+#formLink {
+    text-align: center;
+    color: #EEE;
+    margin: 0 auto;
+}
+#formLink a {
+    color: #75ABFF;
+}
+#formLink a:hover {
+    color: #096AC8;
+}
